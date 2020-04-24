@@ -9,13 +9,13 @@
 import UIKit
 
 private let SearchBarHeight:CGFloat = 44
+private let FlowSpacing:CGFloat = 8
+private let CellsCountPerRow:CGFloat = 4
 
 extension ViewController {
-
+    
     func createLayout() {
-        let collectionVC = UICollectionViewController()
-        collectionVC.collectionView.delegate = self
-        collectionVC.collectionView.dataSource = collectionViewDataSource
+        collectionVC = CollectionVC(collectionViewLayout:createCollectionViewFlow())
         collectionVC.view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(collectionVC.view)
         addChild(collectionVC)
@@ -37,6 +37,18 @@ extension ViewController {
             collectionVC.view.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             collectionVC.view.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
         ])
+    }
+    
+    func createCollectionViewFlow() -> UICollectionViewFlowLayout {
+        let newFlow = UICollectionViewFlowLayout()
+
+        let cellSize = CGFloat(Float((view.bounds.width - FlowSpacing * (CellsCountPerRow - 1)) / CellsCountPerRow).rounded(.towardZero))
+        newFlow.itemSize = CGSize(width: cellSize, height: cellSize)
+        newFlow.minimumLineSpacing = FlowSpacing
+        newFlow.minimumInteritemSpacing = 0
+        newFlow.sectionInset = UIEdgeInsets.init(top: FlowSpacing, left: FlowSpacing, bottom: FlowSpacing, right: FlowSpacing)
+        
+        return newFlow
     }
     
 }

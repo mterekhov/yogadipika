@@ -30,8 +30,8 @@ class AsanaService:AsanaServiceProtocol {
             }
             newAsanasList = parseJSON(json:json)
         }
-        catch _ {
-            
+        catch let error {
+            print(error)
         }
         
         return newAsanasList

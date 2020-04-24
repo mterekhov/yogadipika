@@ -10,20 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let collectionViewDataSource = CollectionViewDataSource()
+    var collectionVC = CollectionVC()
 
     override func loadView() {
         super.loadView()
         
         createLayout()
-        
-        collectionViewDataSource.collectData()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        collectionVC.collectionView.reloadData()
     }
-
+    
 }
 

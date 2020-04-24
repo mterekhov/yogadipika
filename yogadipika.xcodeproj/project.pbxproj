@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C2520BB2452F0B400947E9D /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2520BA2452F0B400947E9D /* CollectionVC.swift */; };
 		4C26110C2452D45E001F15F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26110B2452D45E001F15F2 /* AppDelegate.swift */; };
 		4C26110E2452D45E001F15F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26110D2452D45E001F15F2 /* SceneDelegate.swift */; };
 		4C2611102452D45E001F15F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26110F2452D45E001F15F2 /* ViewController.swift */; };
@@ -14,14 +15,13 @@
 		4C2611182452D460001F15F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2611162452D460001F15F2 /* LaunchScreen.storyboard */; };
 		4C2611202452D55E001F15F2 /* catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C26111F2452D55E001F15F2 /* catalog.json */; };
 		4C2611222452DC01001F15F2 /* ViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2611212452DC01001F15F2 /* ViewController+Layout.swift */; };
-		4C2611242452DF20001F15F2 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2611232452DF20001F15F2 /* CollectionViewDataSource.swift */; };
 		4C2611272452E027001F15F2 /* ViewController+UISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2611252452E027001F15F2 /* ViewController+UISearchBarDelegate.swift */; };
-		4C2611282452E027001F15F2 /* ViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2611262452E027001F15F2 /* ViewController+UICollectionViewDelegate.swift */; };
 		4C26112B2452E0D6001F15F2 /* AsanaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26112A2452E0D6001F15F2 /* AsanaService.swift */; };
 		4C26112D2452E106001F15F2 /* Asana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26112C2452E106001F15F2 /* Asana.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C2520BA2452F0B400947E9D /* CollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
 		4C2611082452D45E001F15F2 /* yogadipika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yogadipika.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C26110B2452D45E001F15F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C26110D2452D45E001F15F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,9 +31,7 @@
 		4C2611192452D460001F15F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C26111F2452D55E001F15F2 /* catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = catalog.json; sourceTree = "<group>"; };
 		4C2611212452DC01001F15F2 /* ViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Layout.swift"; sourceTree = "<group>"; };
-		4C2611232452DF20001F15F2 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		4C2611252452E027001F15F2 /* ViewController+UISearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
-		4C2611262452E027001F15F2 /* ViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
 		4C26112A2452E0D6001F15F2 /* AsanaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AsanaService.swift; path = yogadipika/AsanaService.swift; sourceTree = SOURCE_ROOT; };
 		4C26112C2452E106001F15F2 /* Asana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asana.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,10 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				4C2611252452E027001F15F2 /* ViewController+UISearchBarDelegate.swift */,
-				4C2611262452E027001F15F2 /* ViewController+UICollectionViewDelegate.swift */,
-				4C2611232452DF20001F15F2 /* CollectionViewDataSource.swift */,
 				4C26110F2452D45E001F15F2 /* ViewController.swift */,
 				4C2611212452DC01001F15F2 /* ViewController+Layout.swift */,
+				4C2520BA2452F0B400947E9D /* CollectionVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -164,12 +161,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2611282452E027001F15F2 /* ViewController+UICollectionViewDelegate.swift in Sources */,
 				4C2611102452D45E001F15F2 /* ViewController.swift in Sources */,
 				4C26112B2452E0D6001F15F2 /* AsanaService.swift in Sources */,
 				4C26110C2452D45E001F15F2 /* AppDelegate.swift in Sources */,
+				4C2520BB2452F0B400947E9D /* CollectionVC.swift in Sources */,
 				4C2611222452DC01001F15F2 /* ViewController+Layout.swift in Sources */,
-				4C2611242452DF20001F15F2 /* CollectionViewDataSource.swift in Sources */,
 				4C26112D2452E106001F15F2 /* Asana.swift in Sources */,
 				4C2611272452E027001F15F2 /* ViewController+UISearchBarDelegate.swift in Sources */,
 				4C26110E2452D45E001F15F2 /* SceneDelegate.swift in Sources */,
