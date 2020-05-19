@@ -10,14 +10,12 @@ import UIKit
 
 class CollectionVC:UICollectionViewController {
     
-    let CollectionViewCellID = "CollectionViewCellID"
-    let asanaService:AsanaServiceProtocol = AsanaService()
-    var asanasList = [Asana]()
+    private let CollectionViewCellID = "CollectionViewCellID"
+    public var asanasList = [Asana]()
     
     override func loadView() {
         super.loadView()
 
-        asanasList = asanaService.asanasList()
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: CollectionViewCellID)
         collectionView.backgroundColor = .white
         collectionView.showsVerticalScrollIndicator = false
@@ -37,6 +35,7 @@ class CollectionVC:UICollectionViewController {
         let newCell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCellID, for: indexPath)
         newCell.contentView.backgroundColor = .purple
         newCell.backgroundColor = .red
+        
         return newCell
     }
 

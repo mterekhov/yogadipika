@@ -1,5 +1,5 @@
 //
-//  ViewController+Layout.swift
+//  ViewController.swift
 //  yogadipika
 //
 //  Created by Michael on 24.04.2020.
@@ -8,13 +8,30 @@
 
 import UIKit
 
-private let SearchBarHeight:CGFloat = 44
-private let FlowSpacing:CGFloat = 8
-private let CellsCountPerRow:CGFloat = 4
-
-extension ViewController {
+class AsanasListVC: UIViewController, UISearchBarDelegate {
     
-    func createLayout() {
+    public var asanasService:AsanasServiceProtocol = AsanasService()
+
+    private let SearchBarHeight:CGFloat = 44
+    private let FlowSpacing:CGFloat = 8
+    private let CellsCountPerRow:CGFloat = 4
+    private var collectionVC = CollectionVC()
+
+    override func loadView() {
+        super.loadView()
+        
+        createLayout()
+        asanasService.processAsanasLibrary()
+        collectionVC.asanasList = asanasService.asanasList()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        collectionVC.collectionView.reloadData()
+    }
+    
+    private func createLayout() {
         collectionVC = CollectionVC(collectionViewLayout:createCollectionViewFlow())
         collectionVC.view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(collectionVC.view)
@@ -39,7 +56,7 @@ extension ViewController {
         ])
     }
     
-    func createCollectionViewFlow() -> UICollectionViewFlowLayout {
+    private func createCollectionViewFlow() -> UICollectionViewFlowLayout {
         let newFlow = UICollectionViewFlowLayout()
 
         let cellSize = CGFloat(Float((view.bounds.width - FlowSpacing * (CellsCountPerRow - 1)) / CellsCountPerRow).rounded(.towardZero))

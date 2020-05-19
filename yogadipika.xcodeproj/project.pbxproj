@@ -10,14 +10,16 @@
 		4C2520BB2452F0B400947E9D /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2520BA2452F0B400947E9D /* CollectionVC.swift */; };
 		4C26110C2452D45E001F15F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26110B2452D45E001F15F2 /* AppDelegate.swift */; };
 		4C26110E2452D45E001F15F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26110D2452D45E001F15F2 /* SceneDelegate.swift */; };
-		4C2611102452D45E001F15F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26110F2452D45E001F15F2 /* ViewController.swift */; };
+		4C2611102452D45E001F15F2 /* AsanasListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26110F2452D45E001F15F2 /* AsanasListVC.swift */; };
 		4C2611152452D460001F15F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2611142452D460001F15F2 /* Assets.xcassets */; };
 		4C2611182452D460001F15F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C2611162452D460001F15F2 /* LaunchScreen.storyboard */; };
 		4C2611202452D55E001F15F2 /* catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C26111F2452D55E001F15F2 /* catalog.json */; };
-		4C2611222452DC01001F15F2 /* ViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2611212452DC01001F15F2 /* ViewController+Layout.swift */; };
-		4C2611272452E027001F15F2 /* ViewController+UISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2611252452E027001F15F2 /* ViewController+UISearchBarDelegate.swift */; };
-		4C26112B2452E0D6001F15F2 /* AsanaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26112A2452E0D6001F15F2 /* AsanaService.swift */; };
+		4C26112B2452E0D6001F15F2 /* AsanasService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26112A2452E0D6001F15F2 /* AsanasService.swift */; };
 		4C26112D2452E106001F15F2 /* Asana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C26112C2452E106001F15F2 /* Asana.swift */; };
+		4C56238524741F4F002D23E3 /* AsanasDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C56238424741F4F002D23E3 /* AsanasDetailsVC.swift */; };
+		4C56238724742547002D23E3 /* AsanasListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C56238624742547002D23E3 /* AsanasListAssembly.swift */; };
+		4C56238924742763002D23E3 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C56238824742763002D23E3 /* CoreDataService.swift */; };
+		4C56238C24742986002D23E3 /* yogadipika.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C56238A24742986002D23E3 /* yogadipika.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,15 +27,17 @@
 		4C2611082452D45E001F15F2 /* yogadipika.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yogadipika.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C26110B2452D45E001F15F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C26110D2452D45E001F15F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4C26110F2452D45E001F15F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C26110F2452D45E001F15F2 /* AsanasListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsanasListVC.swift; sourceTree = "<group>"; };
 		4C2611142452D460001F15F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C2611172452D460001F15F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C2611192452D460001F15F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C26111F2452D55E001F15F2 /* catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = catalog.json; sourceTree = "<group>"; };
-		4C2611212452DC01001F15F2 /* ViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Layout.swift"; sourceTree = "<group>"; };
-		4C2611252452E027001F15F2 /* ViewController+UISearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+UISearchBarDelegate.swift"; sourceTree = "<group>"; };
-		4C26112A2452E0D6001F15F2 /* AsanaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AsanaService.swift; path = yogadipika/AsanaService.swift; sourceTree = SOURCE_ROOT; };
+		4C26112A2452E0D6001F15F2 /* AsanasService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AsanasService.swift; path = yogadipika/AsanasService.swift; sourceTree = SOURCE_ROOT; };
 		4C26112C2452E106001F15F2 /* Asana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asana.swift; sourceTree = "<group>"; };
+		4C56238424741F4F002D23E3 /* AsanasDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsanasDetailsVC.swift; sourceTree = "<group>"; };
+		4C56238624742547002D23E3 /* AsanasListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsanasListAssembly.swift; sourceTree = "<group>"; };
+		4C56238824742763002D23E3 /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		4C56238B24742986002D23E3 /* yogadipika.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = yogadipika.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,28 +70,38 @@
 		4C26110A2452D45E001F15F2 /* yogadipika */ = {
 			isa = PBXGroup;
 			children = (
-				4C26112A2452E0D6001F15F2 /* AsanaService.swift */,
+				4C56238824742763002D23E3 /* CoreDataService.swift */,
+				4C56238324741F33002D23E3 /* AsanasDetailsScreen */,
+				4C26112A2452E0D6001F15F2 /* AsanasService.swift */,
 				4C26112C2452E106001F15F2 /* Asana.swift */,
-				4C2611292452E02A001F15F2 /* ViewController */,
+				4C2611292452E02A001F15F2 /* AsanasListScreen */,
 				4C26110B2452D45E001F15F2 /* AppDelegate.swift */,
 				4C26110D2452D45E001F15F2 /* SceneDelegate.swift */,
 				4C2611142452D460001F15F2 /* Assets.xcassets */,
 				4C2611162452D460001F15F2 /* LaunchScreen.storyboard */,
+				4C56238A24742986002D23E3 /* yogadipika.xcdatamodeld */,
 				4C2611192452D460001F15F2 /* Info.plist */,
 				4C26111F2452D55E001F15F2 /* catalog.json */,
 			);
 			path = yogadipika;
 			sourceTree = "<group>";
 		};
-		4C2611292452E02A001F15F2 /* ViewController */ = {
+		4C2611292452E02A001F15F2 /* AsanasListScreen */ = {
 			isa = PBXGroup;
 			children = (
-				4C2611252452E027001F15F2 /* ViewController+UISearchBarDelegate.swift */,
-				4C26110F2452D45E001F15F2 /* ViewController.swift */,
-				4C2611212452DC01001F15F2 /* ViewController+Layout.swift */,
+				4C56238624742547002D23E3 /* AsanasListAssembly.swift */,
+				4C26110F2452D45E001F15F2 /* AsanasListVC.swift */,
 				4C2520BA2452F0B400947E9D /* CollectionVC.swift */,
 			);
-			path = ViewController;
+			path = AsanasListScreen;
+			sourceTree = "<group>";
+		};
+		4C56238324741F33002D23E3 /* AsanasDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				4C56238424741F4F002D23E3 /* AsanasDetailsVC.swift */,
+			);
+			path = AsanasDetailsScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,13 +175,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2611102452D45E001F15F2 /* ViewController.swift in Sources */,
-				4C26112B2452E0D6001F15F2 /* AsanaService.swift in Sources */,
+				4C2611102452D45E001F15F2 /* AsanasListVC.swift in Sources */,
+				4C26112B2452E0D6001F15F2 /* AsanasService.swift in Sources */,
 				4C26110C2452D45E001F15F2 /* AppDelegate.swift in Sources */,
+				4C56238C24742986002D23E3 /* yogadipika.xcdatamodeld in Sources */,
 				4C2520BB2452F0B400947E9D /* CollectionVC.swift in Sources */,
-				4C2611222452DC01001F15F2 /* ViewController+Layout.swift in Sources */,
 				4C26112D2452E106001F15F2 /* Asana.swift in Sources */,
-				4C2611272452E027001F15F2 /* ViewController+UISearchBarDelegate.swift in Sources */,
+				4C56238524741F4F002D23E3 /* AsanasDetailsVC.swift in Sources */,
+				4C56238724742547002D23E3 /* AsanasListAssembly.swift in Sources */,
+				4C56238924742763002D23E3 /* CoreDataService.swift in Sources */,
 				4C26110E2452D45E001F15F2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -290,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -358,6 +374,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4C56238A24742986002D23E3 /* yogadipika.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4C56238B24742986002D23E3 /* yogadipika.xcdatamodel */,
+			);
+			currentVersion = 4C56238B24742986002D23E3 /* yogadipika.xcdatamodel */;
+			path = yogadipika.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4C2611002452D45E001F15F2 /* Project object */;
 }

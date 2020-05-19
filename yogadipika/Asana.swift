@@ -10,11 +10,13 @@ import UIKit
 
 struct Asana {
     
+    var uuid = ""
     var title = ""
     var sanskritTitle = ""
+    var iast = ""
     var about = ""
-    var techniqueSteps = [String]()
-    var effects = ""
+    var techniqueStepsList = [String]()
+    var effect = ""
     var imagesList = [UIImage]()
 
 }

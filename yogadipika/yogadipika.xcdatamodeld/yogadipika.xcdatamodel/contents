@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDAsana" representedClassName="CDAsana" syncable="YES" codeGenerationType="class">
+        <attribute name="about" optional="YES" attributeType="String"/>
+        <attribute name="effect" optional="YES" attributeType="String"/>
+        <attribute name="iast" optional="YES" attributeType="String"/>
+        <attribute name="imagesList" optional="YES" attributeType="Transformable"/>
+        <attribute name="sanskrit" optional="YES" attributeType="String"/>
+        <attribute name="similarTitlesList" optional="YES" attributeType="Transformable"/>
+        <attribute name="techniqueStepsList" optional="YES" attributeType="Transformable"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="CDAsana" positionX="-63" positionY="-18" width="128" height="163"/>
+    </elements>
+</model>
